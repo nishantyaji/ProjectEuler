@@ -1,6 +1,5 @@
 from sympy import nextprime
-from math import log10
-from math import floor
+from math import log10, floor
 
 def findModof10Power(index, prime):
     rem  = 1
