@@ -13,12 +13,6 @@ def add_count(n, ways):
     else:
         result_dict[ways]=1
 
-def add_count_debug(n, ways):
-    if ways in result_dict:
-        result_dict[ways].append(n)
-    else:
-        result_dict[ways] = [n]
-
 def calculate(max_limit):
     for n in range(2, (max_limit//4)+1):
         tot = sympy.factorint(n)
@@ -41,4 +35,3 @@ def calculate(max_limit):
 if __name__ == '__main__':
     max_limit = 1000000
     calculate(max_limit)
-    #pprint.pprint(result_dict)
